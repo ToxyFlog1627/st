@@ -114,17 +114,22 @@ static const char *colorname[] = {
 
 	[256] = "#D9E0EE", /* default foreground colour */
 	[257] = "#1E1E2E", /* default background colour */
-	[258] = "#C3BAC6", /*575268*/
-
+	[258] = "#C3BAC6", /* #575268 */
+	[259] = "#575268",
 };
 
 /*
- * foreground, background, cursor, reverse cursor
+ * foreground, background, cursor, reverse cursor, selection
  */
 unsigned int defaultfg = 256;
 unsigned int defaultbg = 257;
 unsigned int defaultcs = 258;
 static unsigned int defaultrcs = 258;
+unsigned int selectionbg = 259;
+unsigned int selectionfg = 256;
+
+static int ignoreselfg = 1; /* 0 - use selectionfg as fg */
+
 /*
  * Default shape of cursor
  * 2: Block ("█")
