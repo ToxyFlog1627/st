@@ -1,5 +1,5 @@
 /* appearance */
-static char *font = "Hack Nerd Font:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Hack Nerd Font:pixelsize=12"; /* :antialias=true:autohint=true */
 static int borderpx = 2;
 
 /*
