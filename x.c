@@ -1560,7 +1560,7 @@ xdrawcursor(int cx, int cy, Glyph g, int ox, int oy, Glyph og)
 	} else {
 		g.fg = defaultbg;
 		g.bg = defaultcs;
-		drawcol = dc.col[defaultcs];
+        drawcol = dc.col[defaultcs];
 	}
 
 	/* draw the new one */

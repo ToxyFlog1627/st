@@ -1,5 +1,5 @@
 /* appearance */
-static char *font = "Hack Nerd Font:pixelsize=12"; /* :antialias=true:autohint=true */
+static char *font = "Hack Nerd Font:pixelsize=14:antialias=true";
 static int borderpx = 2;
 
 /*
@@ -13,7 +13,7 @@ static int borderpx = 2;
 static char *shell = "/bin/zsh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
-char *scroll = "scroll";
+char *scroll = NULL;
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
 /* identification sequence returned in DA and DECID */
@@ -88,7 +88,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 4;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.65;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
