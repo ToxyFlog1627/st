@@ -137,7 +137,7 @@ static int ignoreselfg = 1; /* 0 - use selectionfg as fg */
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 6;
+static unsigned int cursorshape = 2;
 
 /*
  * Default columns and rows numbers
